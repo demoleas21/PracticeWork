@@ -1,27 +1,7 @@
-class Stack:
-    def __init__(self):
-        self.container = []
-
-    def push(self, data):
-        self.container.append(data)
-
-    def pop(self):
-        return self.container.pop()
-
-    def stackSize(self):
-        return len(self.container)
-
-    def isEmpty(self):
-        return self.container == []
-
-    def peek(self):
-        return self.container[len(self.container) - 1]
-
-    def showStack(self):
-        return self.container
+from src.structures import Stack
 
 
-class QueueTwoStacks:
+class QueueTwoStacks(object):
     def __init__(self):
         self.stack1 = Stack()
         self.stack2 = Stack()

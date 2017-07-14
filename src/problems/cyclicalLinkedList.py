@@ -1,10 +1,3 @@
-class LinkedListNode(object):
-
-    def __init__(self, value):
-        self.value = value
-        self.next = None
-
-
 def containsCycle(firstNode):
     nextNodeSlow = firstNode.next
     nextNodeFast = firstNode.next.next
@@ -28,7 +21,3 @@ def main():
     d.next = b
 
     print containsCycle(a)
-
-
-if __name__ == '__main__':
-    main()
