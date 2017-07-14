@@ -21,7 +21,7 @@ class Stack:
         return self.container
 
 
-class LinkedListNode(object):
+class LinkedList(object):
     def __init__(self, value):
         self.value = value
         self.next = None
