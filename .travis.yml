@@ -10,3 +10,6 @@ install:
 
 script:
     - nosetests src/tests/ --with-coverage
+
+after_success:
+    coveralls
