@@ -1,0 +1,4 @@
+[run]
+omit = 
+	*/python2.7.9/*
+    */tests/*
