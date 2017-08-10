@@ -18,3 +18,8 @@ class PalindromeNumberTests(TestCase):
         num = 1
         result = isPalindrome(num)
         self.assertTrue(result)
+
+    def test_negativeNotPalindrome(self):
+        num = -12321
+        result = isPalindrome(num)
+        self.assertFalse(result)
